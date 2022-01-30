@@ -26,31 +26,12 @@ header.main > div.limiter{
 header.main .container{
     display: flex;
 }
-header.main .container nav.menu{
-    position: absolute;
-    right: 0;
-}
-header.main .container nav.menu > ul{
-    display: flex;
-    margin-top: 15px;
-}
-header.main .container nav.menu > ul > li{
-    list-style: none;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #c1ac8c;
-    margin-right: 12px;
-}
-header.main .container nav.menu > ul > li:hover{
-    border-bottom: 1px solid #c1ac8c;
-    cursor: pointer;
-}
 
 
 /* ===================== */
 section.contract h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     margin-bottom: 15px;
     color: #978375;
 }
