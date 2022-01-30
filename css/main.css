@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fcfcfc;
+}
+header.main{
+    background-color: #fcfcfc;
+}
+.limiter{
+    max-width: 1000px;
+    margin: auto;
+}
+header.main > div.limiter{
+    position: relative;
+}
+header.main .container{
+    display: flex;
+}
+header.main .container nav.menu{
+    position: absolute;
+    right: 0;
+}
+header.main .container nav.menu > ul{
+    display: flex;
+    margin-top: 15px;
+}
+header.main .container nav.menu > ul > li{
+    list-style: none;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #c1ac8c;
+    margin-right: 12px;
+}
+header.main .container nav.menu > ul > li:hover{
+    border-bottom: 1px solid #c1ac8c;
+    cursor: pointer;
+}
+
+
+/* ===================== */
+section.contract h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #978375;
+}
+section.contract div.container{
+    display: flex;
+}
+section.contract div.text{
+    margin-left: 20px;
+}
+section.contract div.text > p{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #978375;
+}
+section.contract div.text > button{
+    outline: none;
+    font-size: 40px;
+    color: #978375;
+    background-color: #fcfcfc;
+    border: 2px solid #978375;
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    display: block;
+    transition: background-color .25s, transform .25s;
+    border-radius: 4px;
+}
+section.contract div.text > button:hover{
+    background-color: #978375;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+hr{
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+.hrAll{
+    border-top: 2px solid #978375;
+}
+hr.contract{
+    margin-top: 20px;
+}
+
+
+/* ===================== */
+section.myJob div.limiter > h1.title{
+    color: #978375;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 40px;
+}
+section.myJob div.limiter div.container{
+    width: min-content;
+    margin: auto;
+}
+section.myJob div.limiter div.container div.line{
+    display: flex;
+    margin-top: 20px;
+}
+section.myJob div.limiter div.container div.line > div{
+    width: 270px;
+    height: 270px;
+    border-radius: 8px;
+    border: 1px solid #978375;
+    background-color: #c1ac8c;
+    overflow: hidden;
+}
+section.myJob div.limiter div.container div.line > div > img{
+    transition: transform .25s;
+}
+section.myJob div.limiter div.container div.line > div > img:hover{
+    transform: scale(1.2);
+}
+section.myJob div.limiter div.container div.line > div:nth-child(1) ~ div{
+    margin-left: 15px;
+}
+section.myJob div.limiter div.container > button{
+    outline: none;
+    font-size: 40px;
+    color: #978375;
+    background-color: #fcfcfc;
+    border: 2px solid #978375;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color .25s, transform .25s;
+    border-radius: 4px;
+    margin: 40px auto 40px auto;
+}
+section.myJob div.limiter div.container > button:hover{
+    background-color: #978375;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+section.contract div.limiter > div.checked{
+    margin: auto;
+    margin: 50px auto auto auto;
+    text-align: center;
+}
+section.contract div.limiter > div.checked > div.line{
+    display: flex;
+}
+section.contract div.limiter > div.checked > div.line p{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #978375;
+    margin-left: 10px;
+}
+i.checked{
+    font-size: 25px;
+    color: #978375;
+}
+
+/* ----------------- */
+section.networks > .limiter > h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #978375;
+    margin-top: 20px;
+    font-weight: 100;
+}
+section.networks > .limiter > .container{
+    display: flex;
+    margin: auto;
+    width: min-content;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+section.networks > .limiter > .container div{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #978375;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .25s;
+}
+section.networks > .limiter > .container div:nth-child(1) ~ div{
+    margin-left: 10px;
+}
+section.networks > .limiter > .container div .fa-facebook-f{
+    font-size: 60px;
+}
+section.networks > .limiter > .container div p{
+    font-size: 70px;
+    width: min-content;
+    height: min-content;
+    color: #978375;
+    line-height: 0;
+    transition: transform .25s, color .25s;
+}
+section.networks > .limiter > .container div:hover{
+    cursor: pointer;
+    background-color: #978375;
+}
+section.networks > .limiter > .container div:hover p{
+    transform: scale(1.2);
+    color: #fcfcfc;
+}
+
+/* ------------------------ */
+footer.main > div.limiter > p{
+    font-size: 20px;
+    color: #978375;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+/* ------------------- */
+/*@media only screen and (max-width: 1000px)*/
+@media only screen and (max-width: 1050px){
+    section.contract div.text > p{
+        font-size: 30px;
+    }
+    section.contract div.text > button{
+        font-size: 30px;
+    }
+    .limiter{
+        width: calc(100% - 100px);
+        max-width: none;
+    }
+    hr{
+        width: calc(100% - 100px);
+    }
+    hr.workspace{
+        width: 100%;
+    }
+    section.contract div.container > .leh > img{
+        width: 250px;
+        height: auto;
+    }
+    section.contract h1{
+        font-size: 20px;
+    }
+    section.contract div.limiter > div.checked{
+        margin: 18px auto auto auto;
+    }
+    section.contract div.limiter > div.checked > div.line p{
+        font-size: 22px;
+    }
+    i.checked{
+        font-size: 22px;
+    }
+    section.myJob div.limiter > h1.title{
+        font-size: 30px;
+    }
+    section.myJob div.limiter div.container div.line > div{
+        width: 230px;
+        height: 230px;
+    }
+    section.myJob div.limiter div.container > button{
+        font-size: 30px;
+    }
+    section.myJob div.limiter div.container div.line div:nth-child(3){
+        display: none;
+    }
+    section.networks > .limiter > .container div .fa-facebook-f{
+        font-size: 40px;
+    }
+    section.networks > .limiter > .container div p{
+        font-size: 50px;
+    }
+    section.networks > .limiter > .container div{
+        width: 80px;
+        height: 80px;
+    }
+    footer.main > div.limiter > p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 850px){
+    section.contract div.text > p{
+        font-size: 22px;
+    }
+    section.contract div.text > button{
+        font-size: 22px;
+    }
+    .limiter{
+        width: calc(100% - 100px);
+        max-width: none;
+    }
+    hr{
+        width: calc(100% - 100px);
+    }
+    section.contract div.container > .leh > img{
+        width: 250px;
+        height: auto;
+    }
+    section.contract h1{
+        font-size: 20px;
+    }
+    section.contract div.limiter > div.checked{
+        margin: 18px auto auto auto;
+    }
+    section.contract div.limiter > div.checked > div.line p{
+        font-size: 22px;
+    }
+    i.checked{
+        font-size: 22px;
+    }
+    footer.main > div.limiter > p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 700px){
+    section.contract div.text > p{
+        font-size: 20px;
+    }
+    section.contract div.text > button{
+        font-size: 20px;
+    }
+    .limiter{
+        width: calc(100% - 100px);
+        max-width: none;
+    }
+    hr{
+        width: calc(100% - 100px);
+    }
+    section.contract div.container > .leh > img{
+        width: 250px;
+        height: auto;
+    }
+    section.contract h1{
+        font-size: 18px;
+    }
+    section.contract div.limiter > div.checked{
+        margin: 15px auto auto auto;
+    }
+    section.contract div.limiter > div.checked > div.line p{
+        font-size: 20px;
+    }
+    i.checked{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    /*testes*/
+    ul{
+        display: none !important;
+    }
+    /*testes*/
+    section.contract div.container{
+        flex-direction: column;
+    }
+    section.contract div.text{
+        margin-left: 0;
+        max-width: 350px;
+        margin-top: 15px;
+    }
+    section.contract div.container > .leh{
+        height: 300px;
+        overflow: hidden;
+    }
+    section.contract div.limiter > div.checked > div.line p{
+        font-size: 16px;
+    }
+    i.checked{
+        font-size: 16px;
+    }
+    section.myJob div.limiter div.container div.line{
+        flex-direction: column;
+    }
+    section.myJob div.limiter div.container div.line > div:nth-child(1) ~ div{
+        margin-left: 0;
+    }
+    section.myJob div.limiter div.container div.line > div:nth-child(2){
+        margin-top: 20px;
+    }
+    section.myJob div.limiter > h1.title{
+        font-size: 20px;
+    }
+    section.myJob div.limiter div.container > button{
+        font-size: 20px;
+    }
+    section.networks > .limiter > .container div .fa-facebook-f{
+        font-size: 30px;
+    }
+    section.networks > .limiter > .container div p{
+        font-size: 40px;
+    }
+    section.networks > .limiter > .container div{
+        width: 60px;
+        height: 60px;
+    }
+    footer.main > div.limiter > p{
+        font-size: 14px;
+    }
+}
+
+
+
+/* ------------------- */
